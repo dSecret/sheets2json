@@ -183,7 +183,7 @@ function getObjects_(data, keys) {
       }
 
       if (keys[j]=='tag') {
-        object[keys[j]] = cellData.split(',').map(function(e){ e.trim() })
+        object[keys[j]] = cellData.split(',').map(function(e){ return e.trim() })
       } else {
         object[keys[j]] = cellData;
       }
